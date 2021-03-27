@@ -1,0 +1,35 @@
+=> Sintaxe padrão duma classe =>
+
+[ModificadorClasse] class NOME_DA_CLASSE{
+		//variaveis / propriedades
+		[EspecifiadorAcesso] tipo NOME_PROPRIEDADE;
+		
+		//métodos
+		[EspecificadorAcesso] retorno NOME_MÉTODO([arg1,...]){
+			//corpo do método
+		}
+}
+
+
+
+-----//---
+
+//ModificadorClasse : Define a visibilidade da classe
+
+	//public: Pública, sem restrição de vizualização
+	//abstract: Classe-Base para outras classes, não podem ser
+			//instanciados a objetos desta classe
+	//sealed: Classe que não pode ser herdada
+	//static: Classe não permite a instanciação de objetos e seus
+			//membros devem ser static
+
+//EspecificadorAcesso: Onde um membro da classe pode ser acessado
+	//public: Sem restrição de acesso
+	//private: Só podem ser acessados pela própria classe
+	//protected: Podem ser acessados na própria classe e nas classes
+			//derivadas
+	//abstract: Os métodos não tem implementação somente os cabeçalhos
+	//sealed: O método não pode ser redefinido
+	//virtual: O método pode ser redefinido em uma classe derivada
+	//static: O método pode ser chamado mesmo sem a instanciação de 
+		//um objeto
